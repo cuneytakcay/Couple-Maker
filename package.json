@@ -1,0 +1,23 @@
+{
+  "name": "couple-maker",
+  "version": "1.0.0",
+  "description": "An app that matches one up with another base on a survey result.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cuneytakcay/Couple-Maker.git"
+  },
+  "author": "Cuneyt Akcay",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cuneytakcay/Couple-Maker/issues"
+  },
+  "homepage": "https://github.com/cuneytakcay/Couple-Maker#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2"
+  }
+}
