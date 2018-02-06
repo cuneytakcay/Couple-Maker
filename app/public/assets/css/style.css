@@ -1,0 +1,95 @@
+html, body {
+	/* BACKGROUND */
+	background-image: linear-gradient(rgba(50, 0, 0, 0.7), rgba(100, 0, 0, 1)), url('../images/home-background-image.jpeg');
+	background-position: center;
+	/*background-size: cover;    Only for mobile size*/
+	background-attachment: fixed;
+	height: 100vh;
+	/****************************/
+	color: #333;
+    font-family: 'Delius', sans-serif;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+
+h1, h2 {
+    font-weight: 300;
+}
+
+h1 {
+	color: #cc0000;
+    font-size: 240%;
+    font-family: 'Cabin Sketch', cursive;
+    letter-spacing: 1px;
+    word-spacing: 10px;
+    text-transform: uppercase;
+}
+
+h2 {
+	color: #ccc;
+    font-size: 150%;
+    font-family: 'Delius', cursive;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+}
+
+a {
+	font-size: 75%;
+	color: #bbb;
+}
+
+a:hover {
+	color: #fff;
+	text-decoration: none;
+}
+
+.center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.bottom {
+	position: absolute;
+	bottom: 2%;
+	left: 50%;
+	transform: translate(-50%);
+}
+
+#btn-survey {
+	background-color: #660000;
+	border: 1px solid #fff;
+	color: #fff;
+	padding: 10px 40px;
+	margin-top: 30px;
+	transition: background 0.2s, color 0.2s, border 0.2s;
+}
+
+#btn-survey:hover {
+	background-color: #cc0000;
+	border: 1px solid #fff;
+	cursor: pointer;
+}
+
+#pipe {
+	color: #fff;
+}
+
+/* ================ SURVEY =============== */
+.content {
+	background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)), url('../images/home-background-image.jpeg');
+	background-position: center;
+	background-size: cover;
+}
+
+select {
+	border: 0;
+	border-radius: 3px;
+	margin-bottom: 20px;
+	color: #777;
+	font-size: 90%;
+	padding: 5px;
+	box-shadow: 5px 5px 10px;
+}
+/* ====================================== */

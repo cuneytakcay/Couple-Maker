@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Couple Maker Survey</title>
+		<!-- BOOTSTRAP -->
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+		<!-- CSS STYLE SHEET -->
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+		<!-- GOOGLE FONTS -->
+		<link href="https://fonts.googleapis.com/css?family=Cabin+Sketch|Delius" rel="stylesheet">
+		<!-- JQUERY -->
+		<script src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+		<!-- POPPER.JS FOR BOOTSTRAP -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<!-- BOOTSTRAP.JS -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div class="row p-5">
+				<div class="col-md-1 col-lg-2"></div>
+				<div class="col-sm-12 col-md-10 col-lg-8 content rounded">
+					<form class="p-4">
+						<h4 class="text-danger mt-3"><strong>Find your match survey</strong></h4>
+						<hr>
+						<div class="form-group">
+							<input type="text" name="name" class="form-control validation" placeholder="Your name..." id="name">
+						</div>
+						<div class="form-group">
+							<input type="text" name="link" class="form-control validation" placeholder="Link to your photo image..." id="photo">
+						</div>
+						<!-- Radio -->
+						<div class="form-check">
+							<p>I'm interested in</p>
+							<input type="radio" name="radio" value="man" checked>&nbsp;&nbsp;man<br>
+							<input type="radio" name="radio" value="woman">&nbsp;&nbsp;woman<br>
+						</div><hr>
+						<!-- Question 1 -->
+						<h5 class="text-dark"><strong>Question 1</strong></h5>
+						<p>Harry Potter is your favorite YA movie franchise.</p>
+						<select class="validation" id="q-1">
+							<option>Select an option</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+						</select>
+						<!-- Question 2 -->
+						<h5 class="text-dark"><strong>Question 2</strong></h5>
+						<p>You choose The Beatles rather than The Rolling Stones.</p>
+						<select class="validation" id="q-2">
+							<option>Select an option</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+						</select>
+						<!-- Question 3 -->
+						<h5 class="text-dark"><strong>Question 3</strong></h5>
+						<p>If you were stranded on an island, you would want your books with you.</p>
+						<select class="validation" id="q-3">
+							<option>Select an option</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+						</select>
+						<!-- Question 4 -->
+						<h5 class="text-dark"><strong>Question 4</strong></h5>
+						<p>Long-term relationship is not your thing.</p>
+						<select class="validation" id="q-4">
+							<option>Select an option</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+						</select>
+						<!-- Question 5 -->
+						<h5 class="text-dark"><strong>Question 5</strong></h5>
+						<p>You never want to talk about your past relationships.</p>
+						<select class="validation" id="q-5">
+							<option>Select an option</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+						</select>
+						<!-- Question 6 -->
+						<h5 class="text-dark"><strong>Question 6</strong></h5>
+						<p>Celebrating Valentine's Day is corny.</p>
+						<select class="validation" id="q-6">
+							<option>Select an option</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+						</select>
+						<!-- Question 7 -->
+						<h5 class="text-dark"><strong>Question 7</strong></h5>
+						<p>You want to be alone, because you are having a bad day.</p>
+						<select class="validation" id="q-7">
+							<option>Select an option</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+						</select>
+						<!-- Question 8 -->
+						<h5 class="text-dark"><strong>Question 8</strong></h5>
+						<p>You spend hours on the phone with your partner.</p>
+						<select class="validation" id="q-8">
+							<option>Select an option</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+						</select>
+						<!-- Question 9 -->
+						<h5 class="text-dark"><strong>Question 9</strong></h5>
+						<p>You always need at least one pet in your life.</p>
+						<select class="validation" id="q-9">
+							<option>Select an option</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+						</select>
+						<!-- Question 10 -->
+						<h5 class="text-dark"><strong>Question 10</strong></h5>
+						<p>You prefer relaxing, watching movie etc. at home in your free time.</p>
+						<select class="validation" id="q-10">
+							<option>Select an option</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+						</select>
+						<hr>
+						<button type="submit" class="btn btn-info btn-block" id="submit-btn" data-target="#survey-modal" data-toggle="modal">Submit your answers</button>
+					</form>
+				</div>
+				<div class="col-md-1 col-lg-2"></div>
+			</div>
+			<footer class="row mb-3">
+				<div class="col-12 text-center">
+					<a href="/api/friends">API List</a> &nbsp;<span id="pipe">|</span>&nbsp; <a href="https://github.com/cuneytakcay" target="_blank">GitHub Repo</a>
+				</div>
+			</footer>
+		</div>
+
+		<!-- SURVEY RESULT MODAL -->
+		<div class="modal fade" id="survey-modal" tabindex="-1" role="dialog">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title text-info">PERFECT MATCH!</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<h6>Modal body text goes here.</h6>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-info btn-block" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+		<script type="text/javascript">
+
+			$('#submit-btn').on('click', function(event) {
+				event.preventDefault();
+
+				var newUser = {
+					name: $('#name').val().trim(),
+					photo: $('#photo').val().trim(),
+					genPref: $('input[name=radio]:checked').val(),
+					scores: [ 
+						$('#q-1').val(),
+						$('#q-2').val(),
+						$('#q-3').val(),
+						$('#q-4').val(),
+						$('#q-5').val(),
+						$('#q-6').val(),
+						$('#q-7').val(),
+						$('#q-8').val(),
+						$('#q-9').val(),
+						$('#q-10').val()
+					]
+				};
+
+				$.post('/api/new', newUser, function(data) {
+					console.log(data);
+				});
+			});
+
+		</script>
+
+	</body>
+</html>
