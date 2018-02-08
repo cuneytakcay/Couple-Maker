@@ -11,19 +11,21 @@ router.use(bodyParser.urlencoded({ extended: true }));
 router.use(bodyParser.json());
 
 // Route to the API List
-router.get('/api/friends', function(req, res) {
-	return res.json(userData);
+router.get('/api/users', function(req, res) {
+	res.json(userData);
 });
 
-router.post('/api/new', function(req, res) {
-	console.log('====================================================')
+var index = 0;
 
+router.get('/api/selection', function(req, res) {
+	res.json(userData[index]);
+});
+
+router.post('/api/users', function(req, res) {
 	var newUser = req.body;
 
-	console.log(newUser);
-
 	var swap = 100;
-	var index = 0;
+	// var index = 0;
 	
 	for (var i = 0; i < userData.length; i++) {
 		var totalDif = 0;
@@ -41,16 +43,40 @@ router.post('/api/new', function(req, res) {
 				index = i;
 			}
 		}
-		
 
 		console.log(userData[i].name + '= ' + totalDif);
 	}
 
 	console.log('least totalDif belongs to ' + userData[index].name + ' with ' + swap + ' points');
-	console.log('====================================================')
-	//userData.push(newUser);
-	res.json(newUser);
+
+	userData.push(newUser);
+	res.json(true);
 });
 
 // Export the router
 module.exports = router;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
