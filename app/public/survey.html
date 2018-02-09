@@ -17,6 +17,7 @@
 		<!-- BOOTSTRAP.JS -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 	</head>
+	
 	<body>
 		<div class="container-fluid">
 			<div class="row p-5">
@@ -25,13 +26,14 @@
 					<form class="p-4">
 						<h4 class="text-danger mt-3"><strong>Find your match survey</strong></h4>
 						<hr>
-						<div class="form-group">
-							<input type="text" name="name" class="form-control validation" placeholder="Your name..." id="name">
+						<!-- Form Inputs -->
+						<div class="form-group ion-name">
+							<input type="text" name="name" class="form-control valid text" placeholder="Your name..." id="name">
 						</div>
-						<div class="form-group">
-							<input type="text" name="link" class="form-control validation" placeholder="Link to your photo image..." id="photo">
+						<div class="form-group ion-photo">
+							<input type="text" name="link" class="form-control valid text" placeholder="Link to your photo image..." id="photo">
 						</div>
-						<!-- Radio -->
+						<!-- Radio Buttons -->
 						<div class="form-check">
 							<p>I'm interested in</p>
 							<input type="radio" name="radio" value="man" checked>&nbsp;&nbsp;man<br>
@@ -40,7 +42,7 @@
 						<!-- Question 1 -->
 						<h5 class="text-dark"><strong>Question 1</strong></h5>
 						<p>Harry Potter is your favorite YA movie franchise.</p>
-						<select class="validation" id="q-1">
+						<select class="valid option" id="q-1">
 							<option>Select an option</option>
 							<option value="1">1 (Strongly disagree)</option>
 							<option value="2">2</option>
@@ -51,7 +53,7 @@
 						<!-- Question 2 -->
 						<h5 class="text-dark"><strong>Question 2</strong></h5>
 						<p>You prefer The Beatles over The Rolling Stones.</p>
-						<select class="validation" id="q-2">
+						<select class="valid option" id="q-2">
 							<option>Select an option</option>
 							<option value="1">1 (Strongly disagree)</option>
 							<option value="2">2</option>
@@ -62,7 +64,7 @@
 						<!-- Question 3 -->
 						<h5 class="text-dark"><strong>Question 3</strong></h5>
 						<p>If you were stranded on an island, you would want your books with you.</p>
-						<select class="validation" id="q-3">
+						<select class="valid option" id="q-3">
 							<option>Select an option</option>
 							<option value="1">1 (Strongly disagree)</option>
 							<option value="2">2</option>
@@ -73,7 +75,7 @@
 						<!-- Question 4 -->
 						<h5 class="text-dark"><strong>Question 4</strong></h5>
 						<p>Long-term relationships are not your thing.</p>
-						<select class="validation" id="q-4">
+						<select class="valid option" id="q-4">
 							<option>Select an option</option>
 							<option value="1">1 (Strongly disagree)</option>
 							<option value="2">2</option>
@@ -84,7 +86,7 @@
 						<!-- Question 5 -->
 						<h5 class="text-dark"><strong>Question 5</strong></h5>
 						<p>You don't want to talk about your past relationships.</p>
-						<select class="validation" id="q-5">
+						<select class="valid option" id="q-5">
 							<option>Select an option</option>
 							<option value="1">1 (Strongly disagree)</option>
 							<option value="2">2</option>
@@ -95,7 +97,7 @@
 						<!-- Question 6 -->
 						<h5 class="text-dark"><strong>Question 6</strong></h5>
 						<p>Celebrating Valentine's Day is corny.</p>
-						<select class="validation" id="q-6">
+						<select class="valid option" id="q-6">
 							<option>Select an option</option>
 							<option value="1">1 (Strongly disagree)</option>
 							<option value="2">2</option>
@@ -106,7 +108,7 @@
 						<!-- Question 7 -->
 						<h5 class="text-dark"><strong>Question 7</strong></h5>
 						<p>When you are having a bad day, you want to be alone.</p>
-						<select class="validation" id="q-7">
+						<select class="valid option" id="q-7">
 							<option>Select an option</option>
 							<option value="1">1 (Strongly disagree)</option>
 							<option value="2">2</option>
@@ -117,7 +119,7 @@
 						<!-- Question 8 -->
 						<h5 class="text-dark"><strong>Question 8</strong></h5>
 						<p>You spend hours on the phone with your partner.</p>
-						<select class="validation" id="q-8">
+						<select class="valid option" id="q-8">
 							<option>Select an option</option>
 							<option value="1">1 (Strongly disagree)</option>
 							<option value="2">2</option>
@@ -128,7 +130,7 @@
 						<!-- Question 9 -->
 						<h5 class="text-dark"><strong>Question 9</strong></h5>
 						<p>You always need at least one pet in your life.</p>
-						<select class="validation" id="q-9">
+						<select class="valid option" id="q-9">
 							<option>Select an option</option>
 							<option value="1">1 (Strongly disagree)</option>
 							<option value="2">2</option>
@@ -139,7 +141,7 @@
 						<!-- Question 10 -->
 						<h5 class="text-dark"><strong>Question 10</strong></h5>
 						<p>You prefer relaxing, watching movies etc. at home in your free time.</p>
-						<select class="validation" id="q-10">
+						<select class="valid option" id="q-10">
 							<option>Select an option</option>
 							<option value="1">1 (Strongly disagree)</option>
 							<option value="2">2</option>
@@ -148,14 +150,15 @@
 							<option value="5">5 (Strongly agree)</option>
 						</select>
 						<hr>
-						<button type="submit" class="btn btn-info btn-block" id="submit-btn" data-target="#survey-modal" data-toggle="modal">Submit your answers</button>
+						<button type="submit" class="btn btn-danger btn-block" id="submit-btn" data-target="#survey-modal" data-toggle="modal">Submit your answers</button>
 					</form>
 				</div>
 				<div class="col-md-1 col-lg-2"></div>
 			</div>
+			<!-- FOOTER -->
 			<footer class="row mb-3">
 				<div class="col-12 text-center">
-					<a href="/api/users">API List</a> &nbsp;<span id="pipe">|</span>&nbsp; <a href="https://github.com/cuneytakcay" target="_blank">GitHub Repo</a>
+					<a href="/api/users">API List</a> &nbsp;<span id="pipe">|</span>&nbsp; <a href="https://github.com/cuneytakcay/Couple-Maker" target="_blank">GitHub Repo</a>
 				</div>
 			</footer>
 		</div>
@@ -165,64 +168,117 @@
 			<div class="modal-dialog" role="document">
 				<div class="modal-content">
 					<div class="modal-header">
-						<h5 class="modal-title text-info">PERFECT MATCH!</h5>
+						<h5 class="modal-title text-danger load-head">Loading...</h5>
+						<h5 class="modal-title text-danger error-head">ERROR!</h5>
+						<h5 class="modal-title text-danger match-head">PERFECT MATCH</h5>
 						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 						<span aria-hidden="true">&times;</span>
 						</button>
 					</div>
 					<div class="modal-body">
-						<div class="div-photo"></div>
-						<div class="div-name"></div>
+						<div class="text-center load-body">
+							<img src="assets/images/Spinner.svg" alt="Loading animation">
+						</div>
+						<div class="text-center error-body">
+							<h6 class="text-center m-4">All fields must be completed...</h6>
+						</div>
+						<div class="match-body">
+							<div class="div-photo"></div>
+							<div class="div-name"></div>
+						</div>
 					</div>
 					<div class="modal-footer">
-						<button type="button" class="btn btn-info btn-block" data-dismiss="modal">Close</button>
+						<button type="button" class="btn btn-danger btn-block" data-dismiss="modal">Close</button>
 					</div>
 				</div>
 			</div>
 		</div>
 	
 		<script type="text/javascript">
+			// Form validation
+			function validateForm() {
+			
+				var formIsValid = true;
+
+				if ($('#name').val() === "") { 
+					formIsValid = false; 
+					$("#name").addClass("invalid");
+				}
+
+				if ($('#photo').val() === "") { 
+					formIsValid = false; 
+					$("#photo").addClass("invalid"); 
+				} 
+
+				$('.valid').each(function() {
+					if ($(this).val() === "Select an option") {
+						formIsValid = false;
+						$(this).addClass("invalid");
+					}
+				});
+	
+				return formIsValid;
+			}
 
 			$('#submit-btn').on('click', function(event) {
 				event.preventDefault();
 
-				var newUser = {
-					name: $('#name').val().trim(),
-					photo: $('#photo').val().trim(),
-					genPref: $('input[name=radio]:checked').val(),
-					scores: [ 
-						$('#q-1').val(),
-						$('#q-2').val(),
-						$('#q-3').val(),
-						$('#q-4').val(),
-						$('#q-5').val(),
-						$('#q-6').val(),
-						$('#q-7').val(),
-						$('#q-8').val(),
-						$('#q-9').val(),
-						$('#q-10').val()
-					]
-				};
+				$('.load-head').hide();
+				$('.error-head').hide();
+				$('.match-head').hide();
+				$('.load-body').hide();
+				$('.error-body').hide();
+				$('.match-body').hide();
 
-				$.post('/api/users', newUser, function(data) {
-					displayMatch();
-				});
+				validateForm();
+
+				if (!validateForm()) { 
+					$('.error-head').show();
+					$('.error-body').show();
+			 	} else { 
+			 		// Object to hold user information is constructed 
+			 		var newUser = {
+			 			name: $('#name').val().trim(),
+			 			photo: $('#photo').val().trim(),
+			 			genPref: $('input[name=radio]:checked').val(),
+			 			scores: [ 
+			 					  $('#q-1').val(), $('#q-2').val(), $('#q-3').val(), $('#q-4').val(), $('#q-5').val(),
+			 					  $('#q-6').val(), $('#q-7').val(), $('#q-8').val(), $('#q-9').val(), $('#q-10').val()
+			 			]
+			 		};
+
+					$('.error-head').hide();
+					$('.error-body').hide();
+
+					// Contructed object that holds user info is posted and
+					// closest match result is received from apiRouting
+			 		$.post('/api/users', newUser, function(data) {
+			 			console.log(data);
+
+			 			// Clears out the fields
+			 			$('.text').val("");
+			 			$('.option').val("Select an option");
+			 			// Shows loading page animation
+			 			$('.load-head').show();
+			 			$('.load-body').show();
+			 			// Delays the load of the data to give a loading effect
+			 			setTimeout(function() {
+			 				$('.load-head').hide();
+			 				$('.load-body').hide();
+			 				$('.match-head').show();
+							$('.match-body').show();
+				 			$('.div-photo').html('<img src=' + data.photo + ' alt="Photo of the perfect match">');
+				 			$('.div-name').html('<h5 class="text-center">' + data.name + '</h5>');
+			 			}, 2000);
+			 		});
+			 	}
+				
 			});
 
-			function displayMatch() {
-
-				$.ajax({ url: window.location.origin + '/api/selection', method: 'GET' })
-				.then(function(userData) {
-
-					console.log("------------------------------------");
-					console.log(userData);
-					console.log("------------------------------------");
-
-					$('.div-photo').html('<img src=' + userData.photo + ' alt="Photo of the perfect match">');
-					$('.div-name').html('<h5 class="text-center">' + userData.name + '</h5>');
-
-				});
-			}
+			// Clears the missing field warning borders when clicked in the input fields
+			$(".valid").focus(function() {
+				$(this).removeClass("invalid");
+			});
 
 		</script>
 
