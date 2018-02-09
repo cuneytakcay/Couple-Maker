@@ -36,5 +36,23 @@ module.exports = [
 		photo: 'https://upload.wikimedia.org/wikipedia/commons/4/46/Natalie_Portman_Thor_2_cropped.png',
 		genPref: 'man',
 		scores: ['2', '3', '1', '4', '5', '3', '1', '4', '2', '1']	
+	},
+	{
+		name: 'Rihanna',
+		photo: 'https://upload.wikimedia.org/wikipedia/commons/1/14/Rihanna_2012_%28Cropped%29.jpg',
+		genPref: 'man',
+		scores: ['4', '3', '4', '3', '2', '3', '5', '5', '2', '5']
+	},
+	{
+		name: 'Scarlett Johansson',
+		photo: 'https://upload.wikimedia.org/wikipedia/commons/c/c5/Scarlett_Johansson_in_Kuwait_01b-tweaked.jpg',
+		genPref: 'man',
+		scores: ['5', '3', '1', '3', '4', '3', '1', '4', '2', '1']	
+	},
+	{
+		name: 'Jarvis Cocker',
+		photo: 'https://upload.wikimedia.org/wikipedia/commons/1/1d/Jarvis_Cocker_%282012%29.jpg',
+		genPref: 'woman',
+		scores: ['2', '3', '1', '1', '5', '2', '1', '4', '2', '4']	
 	}
 ];
