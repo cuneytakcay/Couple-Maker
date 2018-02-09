@@ -15,17 +15,11 @@ router.get('/api/users', function(req, res) {
 	res.json(userData);
 });
 
-var index = 0;
-
-router.get('/api/selection', function(req, res) {
-	res.json(userData[index]);
-});
-
 router.post('/api/users', function(req, res) {
 	var newUser = req.body;
 
 	var swap = 100;
-	// var index = 0;
+	var index = 0;
 	
 	for (var i = 0; i < userData.length; i++) {
 		var totalDif = 0;
@@ -50,7 +44,7 @@ router.post('/api/users', function(req, res) {
 	console.log('least totalDif belongs to ' + userData[index].name + ' with ' + swap + ' points');
 
 	userData.push(newUser);
-	res.json(true);
+	res.json(userData[index]);
 });
 
 // Export the router

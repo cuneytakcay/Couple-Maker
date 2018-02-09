@@ -25,4 +25,16 @@ module.exports = [
 		genPref: 'woman',
 		scores: ['4', '3', '4', '3', '1', '3', '1', '5', '2', '5']
 	},
+	{
+		name: 'Kurt Cobain',
+		photo: 'https://c1.staticflickr.com/3/2165/2280174634_bbfbc6df13.jpg',
+		genPref: 'woman',
+		scores: ['2', '3', '1', '3', '1', '3', '1', '4', '2', '1']	
+	},
+	{
+		name: 'Natalie Portman',
+		photo: 'https://upload.wikimedia.org/wikipedia/commons/4/46/Natalie_Portman_Thor_2_cropped.png',
+		genPref: 'man',
+		scores: ['2', '3', '1', '4', '5', '3', '1', '4', '2', '1']	
+	}
 ];
