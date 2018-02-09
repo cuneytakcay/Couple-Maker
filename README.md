@@ -9,7 +9,7 @@ Couple Maker is a full-stack site that matches up people based on a 10-question 
 Primary purpose of building this site was to practice Node and Express Servers.  
 
 ## Demo
-[Here is a demonstration of the site.](www.gmail.com)
+[Here is a demonstration of the site.](http://shielded-castle-38951.herokuapp.com/)
 
 ## Acknowledgments
 
