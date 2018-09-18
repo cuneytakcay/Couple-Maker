@@ -6,6 +6,7 @@ var path = require('path');
 var router = express.Router();
 
 // Route to the index.html
+// Reaches the static files in the public folder
 router.use(express.static('app/public'));
 
 // Route to the survey.html

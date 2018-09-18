@@ -114,19 +114,3 @@ select {
 	border: 2px solid #dc3545;
 	background-color: rgba(150, 150, 0, 0.4);
 }
-
-.i-name, .i-photo, .i-dropdown {
-	color: #dc3545;
-	font-size: 110%;
-	position: absolute;
-}
-
-.ion-name, .ion-photo {
-	position: relative;
-}
-
-.i-name, .i-photo { top: 8px; right: 15px; }
-
-.i-dropdown {
-	margin-top: 2px;
-}

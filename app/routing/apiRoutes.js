@@ -15,6 +15,8 @@ router.get('/api/users', function(req, res) {
 	res.json(userData);
 });
 
+// Handling incoming survey results and using them 
+// for the compatibility logic.
 router.post('/api/users', function(req, res) {
 	var newUser = req.body;
 
@@ -32,16 +34,16 @@ router.post('/api/users', function(req, res) {
 				swap = totalDif;
 				index = i;
 			}
-
+			// Random selection between two equal matches occurs
 			if (totalDif === swap && Math.floor(Math.random() * 2) === 1) {
 				index = i;
 			}
 		}
 
-		console.log(userData[i].name + '= ' + totalDif);
+		// console.log(userData[i].name + '= ' + totalDif);
 	}
 
-	console.log('least totalDif belongs to ' + userData[index].name + ' with ' + swap + ' points');
+	// console.log('least totalDif belongs to ' + userData[index].name + ' with ' + swap + ' points');
 
 	userData.push(newUser);
 	res.json(userData[index]);
